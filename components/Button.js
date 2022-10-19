@@ -1,6 +1,6 @@
-import { Image, Text, TouchableOpacity } from 'react-native'
 import React from 'react'
-import { assets, SIZES, SHADOWS, COLORS, FONTS } from '../constant'
+import { Image, Text, TouchableOpacity } from 'react-native'
+import { COLORS, FONTS, SHADOWS, SIZES } from '../constant'
 
 
 export const CircleBtn = ({ icon, handlePress, ...props }) => {

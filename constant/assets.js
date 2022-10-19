@@ -1,4 +1,4 @@
-import logo from "../assets/image/logo.png"
+import logo from "../assets/image/logo.png";
 import nft01 from "../assets/image/nft01.png";
 import nft02 from "../assets/image/nft02.jpeg";
 import nft03 from "../assets/image/nft03.jpeg";

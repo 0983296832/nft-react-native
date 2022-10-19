@@ -1,5 +1,5 @@
-import { View, Text, TextInput, Image } from 'react-native'
 import React from 'react'
+import { Image, TextInput, View } from 'react-native'
 import { assets, SIZES } from '../constant'
 
 const Search = ({ searchText, setSearchText }) => {
@@ -9,7 +9,8 @@ const Search = ({ searchText, setSearchText }) => {
       paddingVertical: SIZES.small - 2,
     }}>
       <Image source={assets.search} resizeMode="contain" style={{ height: 20, width: 20, marginRight: SIZES.base }} />
-      <TextInput placeholder="What needs to be done?"
+      <TextInput
+        placeholder="Search NFTs"
         placeholderTextColor="white"
         outlineColor="#ffffff"
         value={searchText}

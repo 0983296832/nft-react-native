@@ -1,6 +1,6 @@
-import { View, Text, StyleSheet, Image } from 'react-native'
 import React from 'react'
-import { assets, COLORS, FONTS, SIZES, } from "../constant"
+import { Image, StyleSheet, Text, View } from 'react-native'
+import { assets, COLORS, FONTS, SIZES } from "../constant"
 import Search from './Search'
 
 const HomeHeader = ({ searchText, setSearchText }) => {

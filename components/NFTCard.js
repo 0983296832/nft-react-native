@@ -1,9 +1,9 @@
-import { View, Text, StyleSheet, Image } from 'react-native'
-import React from 'react'
-import { COLORS, SIZES, SHADOWS, FONTS, assets } from '../constant'
-import { CircleBtn, RectBtn } from './Button'
 import { useNavigation } from '@react-navigation/native'
-import { NFTPrice, NFTInfo, Ending } from "../components"
+import React from 'react'
+import { Image, StyleSheet, View } from 'react-native'
+import { Ending, NFTInfo, NFTPrice } from "../components"
+import { assets, COLORS, SHADOWS, SIZES } from '../constant'
+import { CircleBtn, RectBtn } from './Button'
 
 const NFTCard = ({ data }) => {
     const navigation = useNavigation()
@@ -31,7 +31,7 @@ const NFTCard = ({ data }) => {
                 <View>
                     <NFTInfo name={data.name} bids={data.bids} creator={data.creator} fontSize={SIZES.large} fontSubSize={SIZES.small} />
 
-                    <NFTPrice price={data.price} />
+                    <NFTPrice price={data.price} marginTop={25} />
                 </View>
                 <View>
                     <Ending />

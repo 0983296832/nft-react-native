@@ -1,11 +1,9 @@
 import React from "react";
-import { View, Text, Image } from "react-native";
-
-import NFTPrice from "./NFTPrice"
-import { COLORS, SIZES, FONTS } from "../constant";
+import { Image, Text, View } from "react-native";
+import { COLORS, FONTS, SIZES } from "../constant";
+import NFTPrice from "./NFTPrice";
 
 const DetailsBid = ({ bid }) => {
-    console.log(bid);
     return (
         <View
             style={{
@@ -52,7 +50,7 @@ const DetailsBid = ({ bid }) => {
                 </Text>
             </View>
 
-            <NFTPrice price={bid.price} />
+            <NFTPrice price={bid.price} marginTop={0} />
         </View>
     );
 };

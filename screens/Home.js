@@ -1,20 +1,19 @@
-import { View, Text, SafeAreaView } from 'react-native'
 import React, { useEffect, useState } from 'react'
-import { HomeHeader, NFTCard } from '../components'
-import { assets } from '../constant'
+import { SafeAreaView, View } from 'react-native'
 import { FlatList } from 'react-native-web'
-import { NFTData } from "../constant"
+import { HomeHeader, NFTCard } from '../components'
+import { NFTData } from '../constant'
 
 
 const Home = ({ navigation }) => {
     const [data, setData] = useState(NFTData)
-    const [searchText, setSearchText] = useState()
+    const [searchText, setSearchText] = useState("")
 
     useEffect(() => {
-        if (searchText) {
-            setData(data.filter(item => item.name.toLowerCase().includes(searchText)))
+        if (searchText !== "") {
+            setData(NFTData.filter(item => item.name.toLowerCase().includes(searchText)))
         } else {
-            setData(data)
+            setData(NFTData)
         }
     }, [searchText])
 

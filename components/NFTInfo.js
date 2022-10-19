@@ -1,6 +1,6 @@
-import { View, Text, Image } from 'react-native'
 import React from 'react'
-import { FONTS, SIZES, COLORS } from "../constant"
+import { Image, Text, View } from 'react-native'
+import { COLORS, FONTS } from "../constant"
 
 
 const NFTInfo = ({ name, bids, creator, fontSize, fontSubSize }) => {

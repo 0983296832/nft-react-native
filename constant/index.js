@@ -1,5 +1,6 @@
 import assets from "./assets";
-import { COLORS, SHADOWS, SIZES, FONTS } from "./theme";
 import { NFTData } from "./data";
+import { COLORS, FONTS, SHADOWS, SIZES } from "./theme";
 
 export { assets, COLORS, SHADOWS, SIZES, FONTS, NFTData };
+
